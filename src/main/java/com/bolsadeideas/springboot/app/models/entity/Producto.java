@@ -13,34 +13,32 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-
 @Entity
-@Table(name="productos")
+@Table(name = "productos")
 public class Producto implements Serializable {
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private long id;
-	
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+
 	private String nombre;
-	
+
 	private Double precio;
-	
+
 	@Temporal(TemporalType.DATE)
-	@Column(name="create_at")
+	@Column(name = "create_at")
 	private Date createAt;
-	
 
 	@PrePersist
 	public void prePersist() {
 		createAt = new Date();
 	}
-	
-	public long getId() {
+
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 

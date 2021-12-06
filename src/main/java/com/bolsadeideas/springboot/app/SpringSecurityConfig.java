@@ -56,10 +56,6 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter{
 		build.inMemoryAuthentication()
 		.withUser(users.username("admin").password("12345").roles("ADMIN", "USER"))
 		.withUser(users.username("andres").password("12345").roles("USER"))
-<<<<<<< Updated upstream
-		.withUser(users.username("FHEJYM").password("12345").roles("ADMIN", "USER"))
-		.withUser(users.username("CIMA").password("12345").roles("ADMIN", "USER"));
-=======
 		.withUser(users.username("CIMA").password("12345").roles("USER"))
 		.withUser(users.username("MARLA").password("12345").roles("USER"))
 		.withUser(users.username("HEYNER").password("12345").roles("USER"))
@@ -67,6 +63,6 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter{
 		.withUser(users.username("FABIAN").password("12345").roles("USER"))
 		.withUser(users.username("EMILY").password("12345").roles("USER"))
 		.withUser(users.username("FHEJYM").password("123").roles("ADMIN","USER"));
->>>>>>> Stashed changes
+
 	}
 }

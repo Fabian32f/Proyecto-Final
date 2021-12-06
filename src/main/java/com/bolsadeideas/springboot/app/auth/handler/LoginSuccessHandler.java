@@ -11,7 +11,7 @@ import org.springframework.security.web.authentication.SimpleUrlAuthenticationSu
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.FlashMap;
 import org.springframework.web.servlet.support.SessionFlashMapManager;
-
+//MS
 @Component
 public class LoginSuccessHandler extends SimpleUrlAuthenticationSuccessHandler{
 
